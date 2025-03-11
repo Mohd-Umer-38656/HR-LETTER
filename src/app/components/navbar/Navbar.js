@@ -35,6 +35,9 @@ export default function Navbar() {
         <Link href="/admin" className="hover:text-gray-400">
           Admin
         </Link>
+        <Link href="/idcard" className="hover:text-gray-400">
+          ID Card
+        </Link>
       </div>
 
       {/* Right Side - Always Visible */}

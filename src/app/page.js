@@ -46,5 +46,6 @@ export default function Home() {
         <Dashboard />
       </div>
     </div>
+    
   );
 }
