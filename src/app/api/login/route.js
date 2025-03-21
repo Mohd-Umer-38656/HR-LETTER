@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import bcrypt from "bcryptjs";
+import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import db from "@/lib/db"; // Import MySQL database connection
 
@@ -21,7 +21,7 @@ export async function POST(req) {
 
     // Compare hashed password
     // const validPassword = await bcrypt.compare(password, user.password);
-    const validPassword = await bcrypt.compare("admin@1234", user.password);
+    const validPassword = await bcrypt.compare(password, user.password);
     
 
     if (!validPassword) {

@@ -25,7 +25,7 @@ console.log(templates);
             <p className="text-gray-600 mb-4">{template.category}</p>
             <button
               onClick={() => router.push(`/templates/${template.id}`)}
-              className="bg-blue-500 text-white px-4 py-2 rounded"
+              className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
             >
               Generate
             </button>
